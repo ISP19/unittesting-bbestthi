@@ -13,7 +13,7 @@ class Fraction:
                and denominator (default 1).
       """
       if not isinstance(numerator, int) or not isinstance(denominator, int):
-         raise TypeError
+         raise ValueError
 
       if (numerator < 0 and denominator < 0) or (numerator > 0 and denominator < 0):
          numerator = int(abs(numerator))
